@@ -53,3 +53,4 @@ class BankAccount:
         return self._balance
 
     balance = property(get_balance, set_balance)
+
