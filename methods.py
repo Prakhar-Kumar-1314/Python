@@ -17,6 +17,7 @@ class Rectangle:
         cal_area = self.width * self.height
         return cal_area
 
+
 rect = Rectangle(1, 2, 10, 12)
 pos = rect.get_position()
 
