@@ -19,7 +19,7 @@
 # p1 = Person("Prakhar")
 # p1.salary = 2090
 # print(p1.name + ",", p1.salary)
-#
+
 # class Time:
 #     def __init__(self, second):
 #         self._second = second
@@ -32,25 +32,25 @@
 #     def get_second(self):
 #         return self._second
 #
-#     second = property(get_second, set_second)
-#
-#
+#     second = property(ge1t_second, set_second)
+
+
 # t = Time(54)
 # t.second = 59
 # print(t.second)
 
-class BankAccount:
-    def __init__(self, account_holder_name):
-        self.account_holder_name = account_holder_name
-        self._balance = 0
-
-    def set_balance(self, balance):
-        if balance > 10000 or balance < 0:
-            raise ValueError("Balance out of limits!")
-        self._balance = round(balance)
-
-    def get_balance(self):
-        return self._balance
-
-    balance = property(get_balance, set_balance)
-
+# class BankAccount:
+#     def __init__(self, account_holder_name):
+#         self.account_holder_name = account_holder_name
+#         self._balance = 0
+#
+#     def set_balance(self, balance):
+#         if balance > 10000 or balance < 0:
+#             raise ValueError("Balance out of limits!")
+#         self._balance = round(balance)
+#
+#     def get_balance(self):
+#         return self._balance
+#
+#     balance = property(get_balance, set_balance)
+#

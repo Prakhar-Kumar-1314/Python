@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date?</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #question {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #options {
+      display: flex;
+      gap: 20px;
+    }
+
+    .option {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border: 2px solid #ffb6c1;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    #yes {
+      background-color: #64b5f6;
+    }
+
+    #no {
+      background-color: #e57373;
+    }
+
+    #no:hover {
+      cursor: not-allowed;
+      transform: translateY(-20px);
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src=https://img.freepik.com/premium-photo/cute-sweet-baby-pixarstyle-white-bear-generative-ai_791316-9183.jpg alt="Cute Image">
+    <div id="question">Wanna go out after ESA?</div>
+    <div id="options">
+      <div id="yes" class="option" onclick="alert('Yay! I\'m so happy!')">Yes</div>
+      <div id="no" class="option" onmouseover="changeNoPosition()">No</div>
+    </div>
+  </div>
+  <script>
+    function changeNoPosition() {
+      document.getElementById('no').style.transform = 'translateY(-20px)';
+    }
+  </script>
+</body>
+</html>
