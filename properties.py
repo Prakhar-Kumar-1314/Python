@@ -6,7 +6,8 @@
 #     def set_salary(self, salary):
 #         if salary < 0:
 #             raise ValueError("Invalid Salary.")
-#         self._salary = salary  # Not totally private cause it can still be accesed but then we consider it to be private
+#         self._salary = salary  # Not totally private because it can still be accessed, but then we consider it to be
+#         private
 #
 #     def get_salary(self):
 #         return round(self._salary)
@@ -54,3 +55,5 @@
 #
 #     balance = property(get_balance, set_balance)
 #
+
+
